@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-import java.util.stream.Stream;
-
 import Entities.employee;
 
 public class Program {
@@ -29,6 +27,8 @@ public class Program {
 		
 		System.out.println();
 		System.out.println("************************************************************");
+		System.out.println("*              BOM DIA !!!!                                *");
+		System.out.println("*                                       2                   *");
 		System.out.println("*              REGISTRATION OF EMPLOYEES                   *");
 		System.out.println("************************************************************");
 		System.out.println("*                                                          *");
