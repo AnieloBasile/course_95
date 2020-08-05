@@ -1,6 +1,7 @@
 package Application;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
@@ -25,10 +26,23 @@ public class Program {
 		
 		// PART 1 - READING DATA:
 		
+		Calendar cal = Calendar.getInstance();
+		int hora = cal.get(Calendar.HOUR);
+		
 		System.out.println();
 		System.out.println("************************************************************");
-		System.out.println("*              BOM DIA !!!!                                *");
-		System.out.println("*                                       2                   *");
+		
+		if ( hora < 12 ) {
+			System.out.println("*              GOOD MORNING  !!!!                          *");
+		} else if (hora >= 12 && hora < 18 ) {
+			System.out.println("*              GOOD AFTERNOON  !!!!                        *");
+	
+		} else {
+			System.out.println("*              GOOD NIGHT  !!!!                            *");
+			
+		}
+		
+		System.out.println("*                                                          *");
 		System.out.println("*              REGISTRATION OF EMPLOYEES                   *");
 		System.out.println("************************************************************");
 		System.out.println("*                                                          *");
